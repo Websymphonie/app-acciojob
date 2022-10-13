@@ -1,0 +1,43 @@
+{
+    "orders": [
+        {
+            "priceTransportService": 2000,
+            "priceBase": 15000,
+            "dateHeure": "2022-04-03 12:00:00.000",
+            "adresse": "Cocody Saint Jean",
+            "longitude": "0.0",
+            "latitude": "0.0",
+            "isAcceptCondition": true,
+            "clients": 2,
+            "categories": 3,
+            "communes": 6,
+            "checkboxs": {
+                "78": [
+                    216,
+                    218,
+                    219
+                ],
+                "79": [
+                    220,
+                    221,
+                    315
+                ]
+            },
+            "quantities": {
+                "78": {
+                    "216": 1,
+                    "218": 1,
+                    "219": 1
+                },
+                "79": {
+                    "220": 1,
+                    "221": 1,
+                    "315": 1
+                }
+            },
+            "radios": {
+                "116": 331
+            }
+        }
+    ]
+}

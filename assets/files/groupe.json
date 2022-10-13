@@ -1,0 +1,55 @@
+{
+  "services": [
+    {
+      "id": 2,
+      "name": "Plomberie",
+      "short_name": "Plomberie",
+      "short_description": null,
+      "description": "<p><span style=\"font-size:24px\"><strong>Faire r&eacute;parer une fuite d&#39;eau imm&eacute;diatement par un sp&eacute;cialiste.&nbsp;</strong></span></p>",
+      "content": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><strong><span style=\"font-size:18.0pt\"><span style=\"font-family:&quot;Georgia&quot;,serif\">Retrouvez tous nos plombiers certifi&eacute;s et assur&eacute;s sur la plateforme <span style=\"color:#13151b\">ACCIO-JOB</span></span></span></strong></span></span></p>\r\n\r\n<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"font-size:14.0pt\"><span style=\"font-family:&quot;Georgia&quot;,serif\">Les fuites d&rsquo;eau peuvent &ecirc;tre &agrave; l&rsquo;origine d&rsquo;importants d&eacute;g&acirc;ts, si elles ne sont pas rapidement colmat&eacute;es et r&eacute;par&eacute;es dans les r&egrave;gles de l&rsquo;art. Il faut noter qu&rsquo;elles peuvent &eacute;galement &ecirc;tre &agrave; l&rsquo;origine d&rsquo;une surconsommation d&rsquo;eau qui influera consid&eacute;rablement votre facture.</span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><strong><span style=\"font-size:16.0pt\"><span style=\"font-family:&quot;Georgia&quot;,serif\"><span style=\"color:#13151b\">Comment trouver un prestataire comp&eacute;tent sur la plateforme ACCIO-JOB ?</span></span></span></strong></span></span></p>\r\n\r\n<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"font-size:14.0pt\"><span style=\"font-family:&quot;Georgia&quot;,serif\">Il faut savoir que ACCIO-JOB impose d&eacute;j&agrave; des crit&egrave;res de s&eacute;lection rigoureux au moment de l&rsquo;inscription en ligne afin de limiter les prestataires moins qualifi&eacute;s qui ne seront pas capables de respecter leurs engagements.&nbsp;Le profil des prestataires n&rsquo;est pas valid&eacute; s&rsquo;ils ne sont pas en mesure de fournir leur photo, leur carte d&rsquo;identit&eacute; et leurs coordonn&eacute;es personnelles qui feront l&rsquo;objet d&rsquo;une v&eacute;rification. Toutes ces dispositions ont &eacute;t&eacute; &eacute;tablies pour garantir la s&eacute;curit&eacute; des clients. Le syst&egrave;me d&rsquo;&eacute;valuation apr&egrave;s chaque prestation permet d&rsquo;avoir une id&eacute;e pr&eacute;cise sur les comp&eacute;tences des prestataires.</span></span> <span style=\"font-size:14.0pt\"><span style=\"font-family:&quot;Georgia&quot;,serif\">Nos professionnels sont capables de d&eacute;terminer les &eacute;l&eacute;ments et les modes de pose les plus adapt&eacute;s dans le cadre d&rsquo;installation ou d&rsquo;une r&eacute;paration.</span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><strong><span style=\"font-size:18.0pt\"><span style=\"font-family:&quot;Georgia&quot;,serif\"><span style=\"color:#13151b\">Des tarifs raisonnables fix&eacute;s en fonction des missions &agrave; accomplir </span></span></span></strong></span></span></p>\r\n\r\n<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"font-size:14.0pt\"><span style=\"font-family:&quot;Georgia&quot;,serif\">Si vous aviez d&eacute;j&agrave; eu affaire &agrave; des professionnels dont les prestations &eacute;taient d&eacute;cevantes, d&eacute;sormais, vous ne risquez plus de revivre le m&ecirc;me cauchemar. </span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"font-size:14.0pt\"><span style=\"font-family:&quot;Georgia&quot;,serif\">Vous appr&eacute;cierez les comp&eacute;tences, la rigueur et l&rsquo;affabilit&eacute; des Jobeurs que vous choisissez en ligne. Alors, n&rsquo;h&eacute;sitez plus ! D&eacute;couvrez les diff&eacute;rentes options qui s&rsquo;offrent &agrave; vous sur la plateforme <strong>ACCIO-JOB</strong>.</span></span></span></span></p>",
+      "imageFile": null,
+      "filename": "plombier-6214aebaccaae534483273.jpg",
+      "icon": null,
+      "delais_execution": 0,
+      "image_url_base": "https://accio-job.com/public/uploads/categories/",
+      "parent": null,
+      "children": [
+        {
+          "id": 42,
+          "name": "Dépannage et Fuite d'eau",
+          "short_name": null,
+          "short_description": null,
+          "description": null,
+          "content": null,
+          "imageFile": null,
+          "filename": "plomb-depannage-621e174615ea1312626921.jpg",
+          "icon": null,
+          "delais_execution": 0,
+          "image_url_base": "https://accio-job.com/uploads/categories/",
+          "parent": "/application/api/v1/categories/2",
+          "is_online": true,
+          "is_feature": false,
+          "is_filter": false
+        }
+      ],
+      "is_online": true,
+      "is_feature": true,
+      "is_filter": false,
+      "groupes": [
+        {
+          "id": 2,
+          "name": "Surface du Terrain",
+          "label": "Superficie",
+          "champtype": "radio",
+          "linegroupes": [
+            {
+              "id": 5,
+              "name": "< 20 < m²",
+              "price": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

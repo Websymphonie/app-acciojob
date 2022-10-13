@@ -1,0 +1,115 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "name": "Jardinage",
+            "image": "assets/images/jardinage.jpg",
+            "base_price": 24000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            "id": 2,
+            "name": "Electricité",
+            "image": "assets/images/electricien.jpg",
+            "base_price": 23000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 3,
+            "name": "Soins animaliers",
+            "image": "assets/images/soins-animaux.jpg",
+            "base_price": 10000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 4,
+            "name": "Plomberie",
+            "image": "assets/images/plombier.jpg",
+            "base_price": 12000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 5,
+            "name": "Piscine",
+            "image": "assets/images/piscine.jpg",
+            "base_price": 16500,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 6,
+            "name": "Soins esthétique et coiffure",
+            "image": "assets/images/coiffure.jpg",
+            "base_price": 8000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 7,
+            "name": "Femme de ménage",
+            "image": "assets/images/femme-menage.jpg",
+            "base_price": 15000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 8,
+            "name": "Carreleur",
+            "image": "assets/images/carreleur.png",
+            "base_price": 25000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 9,
+            "name": "Nettoyage industriel",
+            "image": "assets/images/nettoyage-industriel.jpg",
+            "base_price": 17000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 10,
+            "name": "Lavage et clim auto",
+            "image": "assets/images/lavage-et-clim.jpg",
+            "base_price": 5000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 11,
+            "name": "Frigoriste",
+            "image": "assets/images/frigoriste.png",
+            "base_price": 12000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 12,
+            "name": "Docteur à domicile",
+            "image": "assets/images/medecin.jpg",
+            "base_price": 25000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 13,
+            "name": "Menuiserie",
+            "image": "assets/images/menuisier.jpg",
+            "base_price": 10000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            
+        },
+        {
+            "id": 14,
+            "name": "Peinture",
+            "image": "assets/images/peintre.jpg",
+            "base_price": 15000,
+            "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        
+        }
+    ]
+}
