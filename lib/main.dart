@@ -2,6 +2,7 @@ import 'package:acciojob/services/controllers/about_controller.dart';
 import 'package:acciojob/services/controllers/commune_controller.dart';
 import 'package:acciojob/services/controllers/contact_controller.dart';
 import 'package:acciojob/services/controllers/login_controller.dart';
+import 'package:acciojob/services/controllers/order_controller.dart';
 import 'package:acciojob/services/controllers/page_static_controller.dart';
 import 'package:acciojob/services/controllers/service_controller.dart';
 import 'package:acciojob/services/controllers/static_service_controller.dart';
@@ -68,6 +69,7 @@ class _AppState extends State<App> {
 
   @override
   Widget build(BuildContext context) {
+    Get.find<OrderController>();
     Get.find<ServiceController>().getServiceList();
     Get.find<CommuneController>().getCommuneList();
     Get.find<PageStaticController>().getPage(4);

@@ -53,6 +53,7 @@ class _ServiceDetailsPageState extends State<ServiceDetailsPage> {
     super.initState();
     Get.find<UserController>().getUserInfos();
     getDataFormMap();
+    _clientController.text = widget.user!.id.toString();
     setState(() {
       groupes = widget.service!.groupes!;
     });
@@ -199,10 +200,6 @@ class _ServiceDetailsPageState extends State<ServiceDetailsPage> {
 
   @override
   Widget build(BuildContext context) {
-    setState(() {
-      _clientController.text = widget.user!.id.toString();
-      getDataFormMap();
-    });
     return Scaffold(
       appBar: AppBar(
         backgroundColor: MyThemes.primaryColor,

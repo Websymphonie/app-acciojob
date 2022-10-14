@@ -50,6 +50,8 @@ class _ServiceOtherDetailsPageState extends State<ServiceOtherDetailsPage> {
       Get.find<UserController>().getUserInfos();
     }
     getDataFormMap();
+    _clientController.text = widget.user!.id.toString();
+
     super.initState();
   }
 
@@ -128,10 +130,6 @@ class _ServiceOtherDetailsPageState extends State<ServiceOtherDetailsPage> {
 
   @override
   Widget build(BuildContext context) {
-    setState(() {
-      _clientController.text = widget.user!.id.toString();
-      getDataFormMap();
-    });
     return Scaffold(
       appBar: AppBar(
         backgroundColor: MyThemes.primaryColor,
