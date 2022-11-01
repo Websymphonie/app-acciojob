@@ -1,4 +1,8 @@
-import 'package:acciojob/commons/show_custom_snack_bar.dart';
+import 'package:acciojob/commons/widgets/app_big_text.dart';
+import 'package:acciojob/commons/widgets/app_small_text.dart';
+import 'package:acciojob/commons/widgets/custom_btn_loader.dart';
+import 'package:acciojob/commons/widgets/show_custom_snack_bar.dart';
+import 'package:acciojob/pages/security/login.dart';
 import 'package:acciojob/services/controllers/user_controller.dart';
 import 'package:acciojob/services/models/user/user_model.dart';
 import 'package:acciojob/utils/constants/dimensions.dart';
@@ -59,17 +63,90 @@ class _ProfilScreenState extends State<ProfilScreen> {
         if (status.isSuccess) {
           showCustomSnackBar(
             "Vos informations ont bien été mise à jour!",
-            isError: false,
-            title: "Modification",
-            color: MyThemes.whiteColor,
-            background: MyThemes.successPrimary,
+            type: 'error',
+            context: context,
           );
           Get.offAllNamed(RouteHelper.initial);
         } else {
-          showCustomSnackBar(status.message);
+          showCustomSnackBar(
+            status.message,
+            type: 'error',
+            context: context,
+          );
         }
       });
     }
+  }
+
+  Future<void> deleteCompte(
+    BuildContext context,
+    UserModel userModel,
+    UserController userController,
+  ) async {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: AppBigText(
+            text: 'Confirmation',
+            size: Dimensions.font18,
+          ),
+          content: GetBuilder<UserController>(builder: (usController) {
+            return usController.isLoading
+                ? const CustomBtnLoader()
+                : AppSmallText(
+                    text: 'Voulez-vous supprimer votre compte?',
+                    size: Dimensions.font13,
+                    maxline: 3,
+                  );
+          }),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () {
+                Get.back();
+              },
+              child: AppBigText(
+                text: 'Non',
+                size: Dimensions.font14,
+                color: Theme.of(context).brightness == Brightness.light
+                    ? MyThemes.primaryColor
+                    : MyThemes.primaryColor,
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                userController.delete(userModel.id.toString()).then((status) {
+                  if (status.isSuccess) {
+                    Get.back();
+                    userController.clearShareData();
+                    Get.offAll(() => const Login());
+                    showCustomSnackBar(
+                      status.message,
+                      type: 'success',
+                      context: context,
+                    );
+                  } else {
+                    Get.back();
+                    showCustomSnackBar(
+                      status.message,
+                      type: 'error',
+                      context: context,
+                    );
+                  }
+                });
+              },
+              child: AppBigText(
+                text: 'Oui',
+                size: Dimensions.font14,
+                color: Theme.of(context).brightness == Brightness.light
+                    ? MyThemes.primaryColor
+                    : MyThemes.primaryColor,
+              ),
+            )
+          ],
+        );
+      },
+    );
   }
 
   @override
@@ -274,11 +351,18 @@ class _ProfilScreenState extends State<ProfilScreen> {
                     SizedBox(height: Dimensions.height20),
                     AppButton(
                       label: "Sauvegarder les infos",
-                      isLoading: !userController.isLoading,
+                      isLoading: userController.isLoading,
                       onTap: () => updateUser(context, user, userController),
                     ),
                     SizedBox(
                       height: Dimensions.height40,
+                    ),
+                    AppButton(
+                      label: "Supprimer mon compte",
+                      isLoading: userController.isLoading,
+                      onTap: () => deleteCompte(context, user, userController),
+                      backgroundColor: MyThemes.dangerPrimary,
+                      textColor: MyThemes.whiteColor,
                     ),
                   ],
                 ),

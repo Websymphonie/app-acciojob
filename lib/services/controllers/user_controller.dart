@@ -11,10 +11,9 @@ class UserController extends GetxController implements GetxService {
   UserController({required this.userRepository});
 
   bool _isLoading = false;
-  UserModel _userModel = UserModel();
-
   bool get isLoading => _isLoading;
 
+  UserModel _userModel = UserModel();
   UserModel get userModel => _userModel;
 
   Future<ResponseModel> getUserInfos() async {
@@ -30,6 +29,7 @@ class UserController extends GetxController implements GetxService {
     } else {
       responseModel = ResponseModel(false, response.statusText!);
     }
+    _isLoading = false;
     update();
 
     return responseModel;
@@ -46,6 +46,25 @@ class UserController extends GetxController implements GetxService {
       update();
     } else {
       responseModel = ResponseModel(false, response.statusText!);
+    }
+    _isLoading = false;
+    update();
+    return responseModel;
+  }
+
+  Future<ResponseModel> delete(String id) async {
+    _isLoading = true;
+    update();
+    Response response = await userRepository.delete(id);
+
+    late ResponseModel responseModel;
+
+    if (response.statusCode == 200 || response.statusCode == 204) {
+      responseModel = ResponseModel(true, "Votre compte à bien été supprimé.");
+      update();
+    } else {
+      responseModel = ResponseModel(false, response.statusText!);
+      update();
     }
     _isLoading = false;
     update();

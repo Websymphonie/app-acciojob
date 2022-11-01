@@ -57,4 +57,5 @@ class AppConstants {
   static String ORDER_CANCEL_URI = BASE_URL + "commandes/cancel/";
   static String LOGOUT = SITE_WEB_URL + "auth/logout";
   static const USER_INFOS_URI = BASE_URL + 'clients/infos';
+  static const USER_DELETE_URI = BASE_URL + 'clients';
 }

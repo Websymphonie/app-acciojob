@@ -21,6 +21,12 @@ class UserRepository {
     return await apiClient.putData(uri, userModel.toJson());
   }
 
+  Future<Response> delete(String id) async {
+    return await apiClient.deleteData(
+      "${AppConstants.USER_DELETE_URI}/$id",
+    );
+  }
+
   bool clearShareData() {
     sharedPreferences.remove(AppConstants.APP_TOKEN);
     sharedPreferences.remove(AppConstants.APP_USER_ID);

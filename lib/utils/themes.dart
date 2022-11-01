@@ -42,5 +42,7 @@ class MyThemes {
   static Color successSecondary = Color.fromARGB(255, 90, 238, 85);
   static Color dangerPrimary = Color.fromARGB(255, 163, 13, 2);
   static Color dangerSecondary = Color.fromARGB(255, 255, 7, 48);
+  static const Color info = Color.fromARGB(255, 105, 172, 250);
+  static const Color warning = Color(0xfff6a820);
   static double fontSizeInput = 18.0;
 }
